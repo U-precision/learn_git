@@ -1,0 +1,16 @@
+---- dIdentGain Matches (15 in 3 files) ----
+ConParamInit.c:	pAxis[0].dIdentGain =1e-8;// 0.3;
+ConParamInit.c:	pAxis[1].dIdentGain =1e-8;// 0.3;
+ConParamInit.c:	pAxis[2].dIdentGain = 1e-8;//0.03;
+ConParamInit.c:	pAxis[3].dIdentGain =1e-8;// 0.3;
+ConParamInit.c:	pAxis[4].dIdentGain =1e-8;// 0.3;
+ConParamInit.c:	pAxis[5].dIdentGain = 1e-8;//0.03;
+ConParamInit.c:	pAxis[0].dIdentGain =1e-9;// 0.3;
+ConParamInit.c:	pAxis[1].dIdentGain =1e-9;// 0.3;
+ConParamInit.c:	pAxis[2].dIdentGain = 1e-9;//0.03;
+ConParamInit.c:	pAxis[3].dIdentGain =1e-9;// 0.3;
+ConParamInit.c:	pAxis[4].dIdentGain =1e-9;// 0.3;
+ConParamInit.c:	pAxis[5].dIdentGain = 1e-9;//0.03;
+Rtcontrol.c:		Machine.coarseStage.arrAxis[iCmd].dConCalc=Machine.coarseStage.arrAxis[iCmd].dConCalc + Machine.coarseStage.arrAxis[iCmd].dIdentGain * Machine.dIdentData;
+Rtcontrol.c:		Machine.fineStage.arrAxis[iCmd].dConCalc = Machine.fineStage.arrAxis[iCmd].dConCalc + Machine.fineStage.arrAxis[iCmd].dIdentGain * Machine.dIdentData;
+StateMachine.h:	double dIdentGain;
